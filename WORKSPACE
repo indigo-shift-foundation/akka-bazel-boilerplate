@@ -63,7 +63,9 @@ maven_install(
         "com.typesafe.akka:akka-stream_2.12:2.5.23",
         "com.typesafe.akka:akka-stream-testkit_2.12:2.5.23",
         "com.typesafe.akka:akka-testkit_2.12:2.5.23",
+        "com.typesafe:config:1.3.4",
         "com.typesafe.scala-logging:scala-logging_2.12:3.9.2",
+        "org.flywaydb:flyway-core:5.2.4",
         "org.mockito:mockito-core:2.26.0",
         "org.scalaz:scalaz-core_2.12:7.2.27",
         "org.scalaz:scalaz-concurrent_2.12:7.2.27",
@@ -76,5 +78,5 @@ maven_install(
     maven_install_json = "//:maven_install.json",
 )
 
-#load("@maven//:defs.bzl", "pinned_maven_install")
-#pinned_maven_install()
+load("@maven//:defs.bzl", "pinned_maven_install")
+pinned_maven_install()
