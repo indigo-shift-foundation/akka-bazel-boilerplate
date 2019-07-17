@@ -12,5 +12,6 @@ scala_binary(
     ],
     resources=[
         "//src/main/resources/db:configs",
+        "//src/main/resources/db/migrations:migrations",
     ]
 )
