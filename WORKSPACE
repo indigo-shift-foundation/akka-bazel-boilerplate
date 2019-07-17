@@ -57,6 +57,7 @@ scala_repositories((
 maven_install(
     artifacts = [
         "com.github.pureconfig:pureconfig_2.12:0.10.2",
+        "com.h2database:h2:1.4.199",
         "com.typesafe.akka:akka-actor_2.12:2.5.23",
         "com.typesafe.akka:akka-http_2.12:10.1.8",
         "com.typesafe.akka:akka-http-testkit_2.12:10.1.8",
@@ -65,6 +66,7 @@ maven_install(
         "com.typesafe.akka:akka-testkit_2.12:2.5.23",
         "com.typesafe:config:1.3.4",
         "com.typesafe.scala-logging:scala-logging_2.12:3.9.2",
+        "mysql:mysql-connector-java:8.0.16",
         "org.flywaydb:flyway-core:5.2.4",
         "org.mockito:mockito-core:2.26.0",
         "org.scalaz:scalaz-core_2.12:7.2.27",

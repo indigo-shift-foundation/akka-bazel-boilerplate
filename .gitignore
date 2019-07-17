@@ -7,4 +7,5 @@ bazel-*
 .DS_Store
 .project/**
 .ijwb
+.env
 

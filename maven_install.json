@@ -15,9 +15,9 @@
             {
                 "coord": "com.github.pureconfig:pureconfig-core_2.12:0.10.2",
                 "dependencies": [
-                    "com.typesafe:config:1.3.3",
                     "org.scala-lang:scala-library:2.12.8",
-                    "com.github.pureconfig:pureconfig-macros_2.12:0.10.2"
+                    "com.github.pureconfig:pureconfig-macros_2.12:0.10.2",
+                    "com.typesafe:config:1.3.4"
                 ],
                 "file": "v1/https/jcenter.bintray.com/com/github/pureconfig/pureconfig-core_2.12/0.10.2/pureconfig-core_2.12-0.10.2.jar",
                 "sha256": "3909c71647b99ab6d342a3adb286fe0633e75da37bac268d131b40de84763f82",
@@ -26,11 +26,11 @@
             {
                 "coord": "com.github.pureconfig:pureconfig-generic_2.12:0.10.2",
                 "dependencies": [
+                    "com.typesafe:config:1.3.4",
                     "com.chuusai:shapeless_2.12:2.3.3",
                     "org.scala-lang:scala-library:2.12.8",
                     "com.github.pureconfig:pureconfig-macros_2.12:0.10.2",
                     "org.typelevel:macro-compat_2.12:1.1.1",
-                    "com.typesafe:config:1.3.3",
                     "com.github.pureconfig:pureconfig-core_2.12:0.10.2"
                 ],
                 "file": "v1/https/jcenter.bintray.com/com/github/pureconfig/pureconfig-generic_2.12/0.10.2/pureconfig-generic_2.12-0.10.2.jar",
@@ -49,11 +49,11 @@
             {
                 "coord": "com.github.pureconfig:pureconfig_2.12:0.10.2",
                 "dependencies": [
+                    "com.typesafe:config:1.3.4",
                     "com.chuusai:shapeless_2.12:2.3.3",
                     "org.scala-lang:scala-library:2.12.8",
                     "com.github.pureconfig:pureconfig-macros_2.12:0.10.2",
                     "org.typelevel:macro-compat_2.12:1.1.1",
-                    "com.typesafe:config:1.3.3",
                     "com.github.pureconfig:pureconfig-generic_2.12:0.10.2",
                     "com.github.pureconfig:pureconfig-core_2.12:0.10.2"
                 ],
@@ -62,11 +62,25 @@
                 "url": "https://jcenter.bintray.com/com/github/pureconfig/pureconfig_2.12/0.10.2/pureconfig_2.12-0.10.2.jar"
             },
             {
+                "coord": "com.google.protobuf:protobuf-java:3.6.1",
+                "dependencies": [],
+                "file": "v1/https/jcenter.bintray.com/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar",
+                "sha256": "fb66d913ff0578553b2e28a3338cbbbe2657e6cfe0e98d939f23aea219daf508",
+                "url": "https://jcenter.bintray.com/com/google/protobuf/protobuf-java/3.6.1/protobuf-java-3.6.1.jar"
+            },
+            {
+                "coord": "com.h2database:h2:1.4.199",
+                "dependencies": [],
+                "file": "v1/https/jcenter.bintray.com/com/h2database/h2/1.4.199/h2-1.4.199.jar",
+                "sha256": "3125a16743bc6b4cfbb61abba783203f1fb68230aa0fdc97898f796f99a5d42e",
+                "url": "https://jcenter.bintray.com/com/h2database/h2/1.4.199/h2-1.4.199.jar"
+            },
+            {
                 "coord": "com.typesafe.akka:akka-actor_2.12:2.5.23",
                 "dependencies": [
-                    "com.typesafe:config:1.3.3",
                     "org.scala-lang.modules:scala-java8-compat_2.12:0.8.0",
-                    "org.scala-lang:scala-library:2.12.8"
+                    "org.scala-lang:scala-library:2.12.8",
+                    "com.typesafe:config:1.3.4"
                 ],
                 "file": "v1/https/jcenter.bintray.com/com/typesafe/akka/akka-actor_2.12/2.5.23/akka-actor_2.12-2.5.23.jar",
                 "sha256": "e7f3969f762bffce10cf56c7a65c784d4c0f0b23853b88a88c55546db02b2817",
@@ -127,8 +141,8 @@
                 "coord": "com.typesafe.akka:akka-stream-testkit_2.12:2.5.23",
                 "dependencies": [
                     "com.typesafe.akka:akka-testkit_2.12:2.5.23",
+                    "com.typesafe:config:1.3.4",
                     "org.scala-lang:scala-library:2.12.8",
-                    "com.typesafe:config:1.3.3",
                     "com.typesafe.akka:akka-stream_2.12:2.5.23",
                     "com.typesafe.akka:akka-protobuf_2.12:2.5.23",
                     "com.typesafe.akka:akka-actor_2.12:2.5.23",
@@ -144,8 +158,8 @@
             {
                 "coord": "com.typesafe.akka:akka-stream_2.12:2.5.23",
                 "dependencies": [
+                    "com.typesafe:config:1.3.4",
                     "org.scala-lang:scala-library:2.12.8",
-                    "com.typesafe:config:1.3.3",
                     "com.typesafe.akka:akka-protobuf_2.12:2.5.23",
                     "com.typesafe.akka:akka-actor_2.12:2.5.23",
                     "com.typesafe:ssl-config-core_2.12:0.3.7",
@@ -160,9 +174,9 @@
             {
                 "coord": "com.typesafe.akka:akka-testkit_2.12:2.5.23",
                 "dependencies": [
-                    "com.typesafe:config:1.3.3",
                     "org.scala-lang.modules:scala-java8-compat_2.12:0.8.0",
                     "org.scala-lang:scala-library:2.12.8",
+                    "com.typesafe:config:1.3.4",
                     "com.typesafe.akka:akka-actor_2.12:2.5.23"
                 ],
                 "file": "v1/https/jcenter.bintray.com/com/typesafe/akka/akka-testkit_2.12/2.5.23/akka-testkit_2.12-2.5.23.jar",
@@ -181,22 +195,31 @@
                 "url": "https://jcenter.bintray.com/com/typesafe/scala-logging/scala-logging_2.12/3.9.2/scala-logging_2.12-3.9.2.jar"
             },
             {
-                "coord": "com.typesafe:config:1.3.3",
+                "coord": "com.typesafe:config:1.3.4",
                 "dependencies": [],
-                "file": "v1/https/jcenter.bintray.com/com/typesafe/config/1.3.3/config-1.3.3.jar",
-                "sha256": "b5f1d6071f1548d05be82f59f9039c7d37a1787bd8e3c677e31ee275af4a4621",
-                "url": "https://jcenter.bintray.com/com/typesafe/config/1.3.3/config-1.3.3.jar"
+                "file": "v1/https/jcenter.bintray.com/com/typesafe/config/1.3.4/config-1.3.4.jar",
+                "sha256": "8aa8931d8143154f86d393d4a85cfa207a884f16469cdf314dc8d6abba3f1438",
+                "url": "https://jcenter.bintray.com/com/typesafe/config/1.3.4/config-1.3.4.jar"
             },
             {
                 "coord": "com.typesafe:ssl-config-core_2.12:0.3.7",
                 "dependencies": [
-                    "com.typesafe:config:1.3.3",
                     "org.scala-lang:scala-library:2.12.8",
-                    "org.scala-lang.modules:scala-parser-combinators_2.12:1.1.1"
+                    "org.scala-lang.modules:scala-parser-combinators_2.12:1.1.1",
+                    "com.typesafe:config:1.3.4"
                 ],
                 "file": "v1/https/jcenter.bintray.com/com/typesafe/ssl-config-core_2.12/0.3.7/ssl-config-core_2.12-0.3.7.jar",
                 "sha256": "5e41dfedc96081c6cf6d14f83f0e83cbefed7f5a3c50ae0b4c98344cc91545ad",
                 "url": "https://jcenter.bintray.com/com/typesafe/ssl-config-core_2.12/0.3.7/ssl-config-core_2.12-0.3.7.jar"
+            },
+            {
+                "coord": "mysql:mysql-connector-java:8.0.16",
+                "dependencies": [
+                    "com.google.protobuf:protobuf-java:3.6.1"
+                ],
+                "file": "v1/https/jcenter.bintray.com/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar",
+                "sha256": "d12a94c9ce8617379e2bf013e4bd40f8726ff6933d0c0f7545c32769a8939238",
+                "url": "https://jcenter.bintray.com/mysql/mysql-connector-java/8.0.16/mysql-connector-java-8.0.16.jar"
             },
             {
                 "coord": "net.bytebuddy:byte-buddy-agent:1.9.10",
