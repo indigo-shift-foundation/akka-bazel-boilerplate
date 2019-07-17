@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+ENV_FILE = ".env"
+
+def main
+  usage unless ARGV.size > 0
+
+  case ARGV.first
+  when "build"
+    build(ARGV[1..-1])
+  when "test"
+    test(ARGV[1..-1])
+  when "run"
+    run(ARGV[1..-1])
+  else
+    usage
+  end
+end
+
+def usage
+  puts "Usage: ./bazel (build|test|run) <args>"
+  exit 1
+end
+
+def build(targets)
+  puts_and_exec "bazel build #{build_targets(targets)}"
+end
+
+def test(targets)
+  test_envs = env_variables.map { |e| "--test_env #{e}"}.join(" ")
+  puts_and_exec "bazel test #{test_envs} #{build_targets(targets)}"
+end
+
+def run(args)
+  puts_and_exec "bash -c 'set -a; source #{ENV_FILE}; bazel run #{args.join(" ")}'"
+end
+
+def env_variables
+  File.readlines(ENV_FILE).map do |line|
+    key, value = line.strip.split("=", 2)
+    "#{key}=#{ENV[key] || value}"
+  end
+end
+
+def build_targets(targets)
+  targets.empty? ? "//..." : targets.join(" ")
+end
+
+def puts_and_exec(command)
+  puts command
+  exec command
+end
+
+main if __FILE__ == $0
