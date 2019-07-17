@@ -1,0 +1,10 @@
+target/
+release.properties
+buildNumber.properties
+.idea
+*.iml
+bazel-*
+.DS_Store
+.project/**
+.ijwb
+
