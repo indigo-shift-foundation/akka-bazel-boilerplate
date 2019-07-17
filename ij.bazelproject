@@ -3,7 +3,6 @@ directories:
 
 targets:
   //src/...:all
-  //3rdparty/...:all
 
 test_sources:
   src/test/*
