@@ -3,6 +3,23 @@
         "conflict_resolution": {},
         "dependencies": [
             {
+                "coord": "ch.qos.logback:logback-classic:1.2.3",
+                "dependencies": [
+                    "ch.qos.logback:logback-core:1.2.3",
+                    "org.slf4j:slf4j-api:1.7.26"
+                ],
+                "file": "v1/https/jcenter.bintray.com/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar",
+                "sha256": "fb53f8539e7fcb8f093a56e138112056ec1dc809ebb020b59d8a36a5ebac37e0",
+                "url": "https://jcenter.bintray.com/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar"
+            },
+            {
+                "coord": "ch.qos.logback:logback-core:1.2.3",
+                "dependencies": [],
+                "file": "v1/https/jcenter.bintray.com/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar",
+                "sha256": "5946d837fe6f960c02a53eda7a6926ecc3c758bbdd69aa453ee429f858217f22",
+                "url": "https://jcenter.bintray.com/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar"
+            },
+            {
                 "coord": "com.chuusai:shapeless_2.12:2.3.3",
                 "dependencies": [
                     "org.scala-lang:scala-library:2.12.8",
