@@ -4,6 +4,10 @@ Boilerplate for creating an Akka project built using [bazel](https://bazel.build
 
 ## DB Management
 This boilerplate uses [Flyway](https://flywaydb.org) for DB migrations.
+To run the migrations, modify the configuration file in [flyway_migration.conf](src/main/resources/db/flyway_migration.conf) run it with bazel:
+```
+bazel run //src/main/scala/org/indigoshift/flyway:FlywayMigration
+```
 
 ## bazelw
 The boilerplate provides a wrapper to bazel called bazelw. 
