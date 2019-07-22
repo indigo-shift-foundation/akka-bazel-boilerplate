@@ -21,8 +21,7 @@ object ExampleApp extends App with LazyLogging {
     (for {
       s <- eitherT(Server.start(config.getString("example.host"), config.getInt("example.port"), Endpoint.route))
     } yield {
-//      logger.info(s"Started server on host = ${config.getString("host")} and port = ${config.getInt("port")}")
-      logger.info("blah")
+      logger.info(s"Started server on host = ${config.getString("host")} and port = ${config.getInt("port")}")
     }).run
   }
 
